@@ -1,0 +1,93 @@
+{
+  "name": "0wg-studio-devkit",
+  "version": "1.0.0",
+  "description": "Studio development kit with lazy-context pattern, multi-agent orchestration, and AI model integration (Claude + Gemini). Includes product planning, frontend design, and workflow automation.",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio",
+    "url": "https://github.com/wilsongramer"
+  },
+  "homepage": "https://github.com/wilsongramer/0wg_studio_devkit",
+  "repository": "https://github.com/wilsongramer/0wg_studio_devkit",
+  "license": "MIT",
+  "keywords": [
+    "agent-orchestration",
+    "product-management",
+    "frontend-design",
+    "lazy-context",
+    "gemini-integration",
+    "workflow-automation",
+    "multi-agent",
+    "studio-tools"
+  ],
+  "commands": [
+    {
+      "name": "plan",
+      "description": "Generate product requirements and execution plan with agent approval"
+    },
+    {
+      "name": "execute",
+      "description": "Execute the plan in todo.md using parallel subagents with coordination"
+    },
+    {
+      "name": "product-interview",
+      "description": "Conduct a product interview to refine the MVP concept"
+    },
+    {
+      "name": "spec",
+      "description": "Create detailed specifications from requirements"
+    },
+    {
+      "name": "feature-driven-development",
+      "description": "Feature-driven development workflow automation"
+    },
+    {
+      "name": "skip-permissions",
+      "description": "Skip permission requirements for rapid development"
+    }
+  ],
+  "agents": [
+    {
+      "name": "product-manager",
+      "description": "Creates comprehensive product requirements documents with ultra-thinking"
+    },
+    {
+      "name": "project-manager",
+      "description": "Handles task delegation and assignments across software developer agents"
+    },
+    {
+      "name": "architect",
+      "description": "System architecture and technical design decisions"
+    },
+    {
+      "name": "frontend-principal",
+      "description": "Frontend architecture and implementation leadership"
+    },
+    {
+      "name": "backend-principal",
+      "description": "Backend architecture and implementation leadership"
+    },
+    {
+      "name": "product-interviewer",
+      "description": "Conducts product interviews to refine MVP concepts"
+    },
+    {
+      "name": "program-manager",
+      "description": "Manages cross-functional program coordination"
+    }
+  ],
+  "skills": [
+    {
+      "name": "gemini",
+      "description": "Send prompts and tasks to Google Gemini using your API key for extended thinking and multimodal analysis"
+    },
+    {
+      "name": "frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality"
+    },
+    {
+      "name": "frontend-imitate",
+      "description": "Imitate and adapt frontend designs from references"
+    }
+  ]
+}

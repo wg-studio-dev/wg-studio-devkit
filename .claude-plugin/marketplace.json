@@ -1,0 +1,22 @@
+{
+  "name": "0wg-studio",
+  "owner": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio",
+    "url": "https://0wg.studio"
+  },
+  "plugins": [
+    {
+      "name": "0wg-studio-devkit",
+      "source": "./",
+      "description": "Studio development kit with lazy-context pattern, multi-agent orchestration, and AI model integration. Build products faster with intelligent workflows.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/wilsongramer/0wg_studio_devkit",
+      "tags": ["productivity", "agents", "workflow", "frontend", "ai-integration"]
+    }
+  ]
+}
