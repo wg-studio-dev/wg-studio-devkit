@@ -9,7 +9,7 @@
     {
       "name": "dev-team",
       "source": "./plugins/dev-team",
-      "description": "software developer team in a box",
+      "description": "Software developer team in a box",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
@@ -21,7 +21,7 @@
     {
       "name": "builder-commands",
       "source": "./plugins/builder-commands",
-      "description": "specs, plans, and builds your project",
+      "description": "Specs, plans, and builds your project",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
@@ -33,7 +33,7 @@
     {
       "name": "gemini",
       "source": "./plugins/gemini",
-      "description": "use Gemini 3 inside Claude Code!",
+      "description": "Use Gemini 3 inside Claude Code!",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
