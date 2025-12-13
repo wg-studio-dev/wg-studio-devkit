@@ -1,5 +1,5 @@
 {
-  "name": "0wg-studio-devkit",
+  "name": "wg-studio-devkit",
   "version": "1.0.0",
   "description": "Studio development kit with lazy-context pattern, multi-agent orchestration, and AI model integration (Claude + Gemini). Includes product planning, frontend design, and workflow automation.",
   "author": {
