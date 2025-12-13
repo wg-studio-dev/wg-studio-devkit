@@ -7,16 +7,52 @@
   },
   "plugins": [
     {
-      "name": "wg-studio-devkit",
-      "source": "./",
-      "description": "Studio development kit with lazy-context pattern, multi-agent orchestration, and AI model integration. Build products faster with intelligent workflows.",
+      "name": "dev-team",
+      "source": "./plugins/dev-team",
+      "description": "Software development team agents for coordinated workflows (product manager, project manager, architect, principals)",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
         "email": "wilson@0wg.studio"
       },
       "homepage": "https://github.com/WGalyean50/wg-studio-devkit",
-      "tags": ["productivity", "agents", "workflow", "frontend", "ai-integration"]
+      "tags": ["agents", "team", "coordination"]
+    },
+    {
+      "name": "builder-commands",
+      "source": "./plugins/builder-commands",
+      "description": "Workflow automation commands for planning, execution, and feature-driven development",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/WGalyean50/wg-studio-devkit",
+      "tags": ["commands", "workflow", "automation"]
+    },
+    {
+      "name": "gemini",
+      "source": "./plugins/gemini",
+      "description": "Google Gemini API integration for extended thinking and multimodal analysis",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/WGalyean50/wg-studio-devkit",
+      "tags": ["gemini", "ai", "google"]
+    },
+    {
+      "name": "frontend-imitate",
+      "source": "./plugins/frontend-imitate",
+      "description": "Imitate and adapt frontend designs from references with customizations",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/WGalyean50/wg-studio-devkit",
+      "tags": ["frontend", "design", "ui"]
     }
   ]
 }

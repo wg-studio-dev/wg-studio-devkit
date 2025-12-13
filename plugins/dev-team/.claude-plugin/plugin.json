@@ -1,0 +1,11 @@
+{
+  "name": "dev-team",
+  "version": "1.0.0",
+  "description": "Software development team agents: product manager, project manager, architect, and frontend/backend principals for coordinated development workflows.",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio"
+  },
+  "license": "MIT",
+  "keywords": ["agents", "team", "coordination", "development"]
+}

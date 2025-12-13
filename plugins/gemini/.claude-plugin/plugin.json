@@ -1,0 +1,11 @@
+{
+  "name": "gemini",
+  "version": "1.0.0",
+  "description": "Send prompts and tasks to Google Gemini using your API key. Alternative AI provider for extended thinking and multimodal analysis.",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio"
+  },
+  "license": "MIT",
+  "keywords": ["gemini", "ai", "google", "multimodal"]
+}

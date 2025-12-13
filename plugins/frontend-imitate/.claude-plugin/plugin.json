@@ -1,0 +1,11 @@
+{
+  "name": "frontend-imitate",
+  "version": "1.0.0",
+  "description": "Imitate and adapt frontend designs from references. Analyze existing designs and recreate them with customizations.",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio"
+  },
+  "license": "MIT",
+  "keywords": ["frontend", "design", "imitate", "ui"]
+}

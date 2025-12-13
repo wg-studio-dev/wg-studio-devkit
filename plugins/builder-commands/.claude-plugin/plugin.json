@@ -1,0 +1,11 @@
+{
+  "name": "builder-commands",
+  "version": "1.0.0",
+  "description": "Workflow automation commands for product planning, execution, and feature-driven development.",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio"
+  },
+  "license": "MIT",
+  "keywords": ["commands", "workflow", "automation", "planning"]
+}
