@@ -9,7 +9,7 @@
     {
       "name": "dev-team",
       "source": "./plugins/dev-team",
-      "description": "Software development team agents for coordinated workflows (product manager, project manager, architect, principals)",
+      "description": "software developer team in a box",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
@@ -21,7 +21,7 @@
     {
       "name": "builder-commands",
       "source": "./plugins/builder-commands",
-      "description": "Workflow automation commands for planning, execution, and feature-driven development",
+      "description": "specs, plans, and builds your project",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
@@ -33,7 +33,7 @@
     {
       "name": "gemini",
       "source": "./plugins/gemini",
-      "description": "Google Gemini API integration for extended thinking and multimodal analysis",
+      "description": "use Gemini 3 inside Claude Code!",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
@@ -45,7 +45,7 @@
     {
       "name": "frontend-imitate",
       "source": "./plugins/frontend-imitate",
-      "description": "Imitate and adapt frontend designs from references with customizations",
+      "description": "Imitating a website is the sincerest form of flattery",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
