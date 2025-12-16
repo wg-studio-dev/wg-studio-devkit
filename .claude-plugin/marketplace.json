@@ -67,9 +67,9 @@
       "tags": ["research", "reddit", "claude-code"]
     },
     {
-      "name": "gemini-image",
-      "source": "./plugins/gemini-image",
-      "description": "Use Nano Banana to generate images",
+      "name": "nano-banana",
+      "source": "./plugins/nano-banana",
+      "description": "Use Gemini Nano Banana to generate images",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
