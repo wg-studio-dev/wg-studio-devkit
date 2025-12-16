@@ -1,0 +1,11 @@
+{
+  "name": "cc-research",
+  "version": "1.0.0",
+  "description": "Scrape r/ClaudeCode for tips and techniques",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio"
+  },
+  "license": "MIT",
+  "keywords": ["reddit", "research", "claude-code", "tips"]
+}

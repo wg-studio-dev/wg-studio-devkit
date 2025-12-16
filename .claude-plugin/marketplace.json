@@ -45,7 +45,7 @@
     {
       "name": "frontend-imitate",
       "source": "./plugins/frontend-imitate",
-      "description": "Imitating a website is the sincerest form of flattery",
+      "description": "Imitating a website is the sincerest form of flattery - Oscar Wilde, probably",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
@@ -53,6 +53,30 @@
       },
       "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
       "tags": ["frontend", "design", "ui"]
+    },
+    {
+      "name": "cc-research",
+      "source": "./plugins/cc-research",
+      "description": "Scrape r/ClaudeCode for tips and techniques",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+      "tags": ["research", "reddit", "claude-code"]
+    },
+    {
+      "name": "gemini-image",
+      "source": "./plugins/gemini-image",
+      "description": "Use Nano Banana to generate images",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+      "tags": ["gemini", "images", "generation"]
     }
   ]
 }

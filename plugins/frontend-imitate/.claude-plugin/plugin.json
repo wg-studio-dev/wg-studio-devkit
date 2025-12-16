@@ -1,7 +1,7 @@
 {
   "name": "frontend-imitate",
   "version": "1.0.0",
-  "description": "Imitate and adapt frontend designs from references. Analyze existing designs and recreate them with customizations.",
+  "description": "Imitating a website is the sincerest form of flattery - Oscar Wilde, probably",
   "author": {
     "name": "Wilson Gramer",
     "email": "wilson@0wg.studio"
