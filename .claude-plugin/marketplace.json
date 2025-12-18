@@ -9,7 +9,7 @@
     {
       "name": "all-plugins",
       "source": "./plugins/all-plugins",
-      "description": "Complete wg-studio devkit: all agents, commands, and skills in one installation",
+      "description": "Complete wg-studio DevKit",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
@@ -57,7 +57,7 @@
     {
       "name": "frontend-imitate",
       "source": "./plugins/frontend-imitate",
-      "description": "Imitating a website is the sincerest form of flattery - Oscar Wilde, probably",
+      "description": "Imitating a website is the sincerest form of flattery",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
