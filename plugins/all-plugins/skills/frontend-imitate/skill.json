@@ -1,0 +1,6 @@
+{
+  "name": "frontend-imitate",
+  "description": "Create frontend designs by imitating reference websites. Fetches design patterns from configured URLs and applies them to your components.",
+  "version": "1.0.0",
+  "scope": "project"
+}

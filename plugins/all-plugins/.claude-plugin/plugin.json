@@ -1,0 +1,11 @@
+{
+  "name": "all-plugins",
+  "version": "1.0.0",
+  "description": "Complete wg-studio devkit: all agents, commands, and skills in one installation",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio"
+  },
+  "license": "MIT",
+  "keywords": ["bundle", "all", "complete", "toolkit"]
+}

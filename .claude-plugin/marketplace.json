@@ -7,6 +7,18 @@
   },
   "plugins": [
     {
+      "name": "all-plugins",
+      "source": "./plugins/all-plugins",
+      "description": "Complete wg-studio devkit: all agents, commands, and skills in one installation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+      "tags": ["bundle", "complete", "toolkit"]
+    },
+    {
       "name": "dev-team",
       "source": "./plugins/dev-team",
       "description": "Software developer team in a box",
