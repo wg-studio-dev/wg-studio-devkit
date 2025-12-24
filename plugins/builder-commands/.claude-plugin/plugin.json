@@ -1,11 +1,53 @@
 {
   "name": "builder-commands",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Workflow automation commands for product planning, execution, and feature-driven development.",
   "author": {
     "name": "Wilson Gramer",
     "email": "wilson@0wg.studio"
   },
   "license": "MIT",
-  "keywords": ["commands", "workflow", "automation", "planning"]
+  "keywords": ["commands", "workflow", "automation", "planning", "spec", "plan"],
+  "commands": [
+    {
+      "name": "plan-lite",
+      "description": "Lightweight planning optimized for free-tier users - fast and cost-effective PRD and execution plan"
+    },
+    {
+      "name": "plan",
+      "description": "Generate product requirements and execution plan with agent approval"
+    },
+    {
+      "name": "plan-heavy",
+      "description": "Deep planning with extended thinking - comprehensive PRD and execution plan using Opus"
+    },
+    {
+      "name": "spec-lite",
+      "description": "Lightweight specification analysis optimized for free-tier users"
+    },
+    {
+      "name": "spec",
+      "description": "Comprehensive specification analysis with backend, frontend, and architecture synthesis"
+    },
+    {
+      "name": "spec-heavy",
+      "description": "Deep specification analysis with extended thinking for maximum depth"
+    },
+    {
+      "name": "execute",
+      "description": "Execute the plan in todo.md using parallel subagents with coordination"
+    },
+    {
+      "name": "feature-driven-development",
+      "description": "Generate feature list and execution plan with agent approval"
+    },
+    {
+      "name": "product-interview",
+      "description": "Conduct a product interview to refine the MVP concept"
+    },
+    {
+      "name": "skip-permissions",
+      "description": "Allow all tool use without approval prompts"
+    }
+  ]
 }

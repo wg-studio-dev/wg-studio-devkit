@@ -12,11 +12,11 @@ A comprehensive Claude Code plugin for studio development workflows with multi-a
 - **Product Interviewer**: Refines MVP concepts through structured interviews
 - **Program Manager**: Cross-functional coordination
 
-### Workflow Automation
-- `/plan` - Two-phase PRD and execution plan generation
+### Workflow Automation Commands
+- **Planning**: `/plan-lite` (Haiku), `/plan` (Sonnet), `/plan-heavy` (Opus) - PRD and execution plan generation
+- **Specifications**: `/spec-lite` (Haiku), `/spec` (Sonnet), `/spec-heavy` (Opus) - Architecture and design specifications
 - `/execute` - Parallel subagent execution with coordination
 - `/product-interview` - MVP refinement interviews
-- `/spec` - Detailed specification creation
 - `/feature-driven-development` - FDD workflow automation
 - `/skip-permissions` - Rapid development mode
 
@@ -58,18 +58,28 @@ cd 0wg_studio_devkit
 
 ### 1. Product Planning Workflow
 
+Choose the right planning command for your needs:
+
 ```bash
-# Generate PRD and execution plan
+# Quick, cost-effective planning
+/plan-lite
+
+# Balanced planning with Sonnet
 /plan
+
+# Deep planning with extended thinking (Opus)
+/plan-heavy
 
 # Execute the plan with parallel agents
 /execute
 ```
 
-The `/plan` command:
+The plan commands:
 1. **Phase 1**: Product manager reads `docs/` and creates comprehensive `docs/prd.md`
 2. **Approval**: You review and approve the PRD
 3. **Phase 2**: Orchestrator creates `todo.md` with phased tasks and assignments
+
+Use `/plan-lite` for free-tier users or quick iterations, `/plan` for balanced projects, and `/plan-heavy` for mission-critical planning requiring deep analysis.
 
 ### 2. Frontend Design
 
@@ -107,10 +117,14 @@ Setup:
 │   ├── plugin.json           # Plugin metadata
 │   └── marketplace.json      # Marketplace configuration
 ├── commands/                 # Slash commands
+│   ├── plan-lite.md
 │   ├── plan.md
+│   ├── plan-heavy.md
+│   ├── spec-lite.md
+│   ├── spec.md
+│   ├── spec-heavy.md
 │   ├── execute.md
 │   ├── product-interview.md
-│   ├── spec.md
 │   ├── feature-driven-development.md
 │   └── skip-permissions.md
 ├── agents/                   # Agent definitions

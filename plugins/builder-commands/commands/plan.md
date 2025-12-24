@@ -18,7 +18,7 @@ Orchestrates a comprehensive two-phase workflow to generate a Product Requiremen
 
 The product-manager agent will:
 - Read all existing documentation in the `docs/` folder
-- Use ultra-thinking to deeply analyze product vision, requirements, and user flows
+- Analyze product vision, requirements, and user flows
 - Create a comprehensive `docs/prd.md` with:
   - Product Vision & Goals
   - Core Requirements & Features
@@ -35,7 +35,7 @@ After the PRD is created, you will be asked to review and approve it before proc
 
 Once approved, the orchestrator agent will:
 - Read all documentation in `docs/` (including the new prd.md)
-- Think hard about optimal project structure and sequencing
+- Determine optimal project structure and sequencing
 - Create `todo.md` with the following structure:
 
 #### todo.md Structure

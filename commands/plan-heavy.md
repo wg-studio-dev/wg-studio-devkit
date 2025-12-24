@@ -1,16 +1,16 @@
 ---
-name: plan
-description: Generate product requirements and execution plan with agent approval
+name: plan-heavy
+description: Enterprise planning with Opus and extended thinking for maximum depth
 argument-hint: "[optional: project context or additional requirements]"
 ---
 
-# /plan - Generate PRD and Execution Plan
+# /plan-heavy - Deep Planning with Opus Extended Thinking
 
-Orchestrates a comprehensive two-phase workflow to generate a Product Requirements Document (prd.md) and then a detailed execution plan (todo.md) for your project.
+A powerful version of `/plan` that generates a comprehensive Product Requirements Document and execution plan using Opus with extended thinking for maximum analytical depth.
 
-**Phase 1:** A product-manager agent analyzes all documentation in `docs/` and creates a product requirements document.
+**Phase 1:** A product-manager agent uses Opus extended thinking to deeply analyze documentation in `docs/` and create `docs/prd.md`.
 
-**Phase 2:** After your approval, an orchestrator agent uses everything in `docs/` (including the new PRD) to create a detailed execution plan with task assignments and checkboxes.
+**Phase 2:** After your approval, an orchestrator agent uses Opus extended thinking to craft an optimized execution plan in `todo.md`.
 
 ## Workflow
 
@@ -18,14 +18,16 @@ Orchestrates a comprehensive two-phase workflow to generate a Product Requiremen
 
 The product-manager agent will:
 - Read all existing documentation in the `docs/` folder
-- Analyze product vision, requirements, and user flows
-- Create a focused `docs/prd.md` with:
+- Use extended thinking to deeply analyze product vision, requirements, and user flows
+- Create a comprehensive `docs/prd.md` with:
   - Product Vision & Goals
   - Core Requirements & Features
   - User Flows & Personas
   - Acceptance Criteria
   - Technical Considerations
   - Success Metrics
+  - Risk Assessment & Mitigations
+  - Edge Cases & Special Scenarios
 
 ### User Approval Checkpoint
 
@@ -35,6 +37,7 @@ After the PRD is created, you will be asked to review and approve it before proc
 
 Once approved, the orchestrator agent will:
 - Read all documentation in `docs/` (including the new prd.md)
+- Use extended thinking to thoroughly analyze optimal project structure, sequencing, and interdependencies
 - Create `todo.md` with the following structure:
 
 #### todo.md Structure
@@ -56,22 +59,24 @@ Once approved, the orchestrator agent will:
     - "Parallel work with Task X.X" for concurrent execution
     - "Sequential, after Task X.X is complete" for dependent tasks
   - Space for completion summary (filled in when agent completes task)
+  - Risk and complexity notes
+  - Resource requirements
 
 ## Steps
 
 1. **Initiating Phase 1**
-   - The product-manager agent launches automatically
+   - The product-manager agent launches with extended thinking enabled
    - Agent reads all files in `docs/`
-   - Agent creates comprehensive `docs/prd.md`
+   - Agent deeply analyzes and creates comprehensive `docs/prd.md`
 
 2. **Approval Checkpoint**
    - You review the generated `prd.md`
    - You provide approval (or request changes)
 
 3. **Initiating Phase 2**
-   - The orchestrator agent launches automatically
+   - The orchestrator agent launches with extended thinking enabled
    - Agent reads `docs/` including the new `prd.md`
-   - Agent creates `todo.md` with structured execution plan
+   - Agent creates `todo.md` with deeply optimized execution plan
 
 4. **Ready for Execution**
    - `todo.md` is ready for agent teams to execute
@@ -79,9 +84,11 @@ Once approved, the orchestrator agent will:
 
 ## Success Criteria
 
-- [ ] Product requirements document (`docs/prd.md`) is created with clear vision and requirements
+- [ ] Product requirements document (`docs/prd.md`) is created with comprehensive analysis and vision
+- [ ] PRD includes risk assessment and edge case analysis
 - [ ] PRD is reviewed and approved by user
 - [ ] Execution plan (`todo.md`) is created with all phases, tasks, and assignments
 - [ ] todo.md includes clear checkboxes and completion summary spaces
 - [ ] All tasks have proper dependency indicators for parallel/sequential execution
+- [ ] Task sequencing reflects deep analysis of optimal project structure
 - [ ] Instructions at top of todo.md are clear and actionable for all agents

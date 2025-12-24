@@ -1,24 +1,23 @@
 ---
-name: plan
-description: Generate product requirements and execution plan with agent approval
+name: plan-lite
+description: Lightweight planning workflow optimized for free-tier users
 argument-hint: "[optional: project context or additional requirements]"
 ---
 
-# /plan - Generate PRD and Execution Plan
+# /plan-lite - Fast Planning with Haiku
 
-Orchestrates a comprehensive two-phase workflow to generate a Product Requirements Document (prd.md) and then a detailed execution plan (todo.md) for your project.
+A lightweight version of `/plan` that generates a Product Requirements Document and execution plan quickly using Haiku (no extended thinking).
 
-**Phase 1:** A product-manager agent analyzes all documentation in `docs/` and creates a product requirements document.
+**Phase 1:** A product-manager agent analyzes documentation in `docs/` and creates `docs/prd.md`.
 
-**Phase 2:** After your approval, an orchestrator agent uses everything in `docs/` (including the new PRD) to create a detailed execution plan with task assignments and checkboxes.
+**Phase 2:** After your approval, an orchestrator agent creates `todo.md` with the execution plan.
 
 ## Workflow
 
 ### Phase 1: Generate Product Requirements Document
 
 The product-manager agent will:
-- Read all existing documentation in the `docs/` folder
-- Analyze product vision, requirements, and user flows
+- Read existing documentation in the `docs/` folder
 - Create a focused `docs/prd.md` with:
   - Product Vision & Goals
   - Core Requirements & Features
@@ -29,7 +28,7 @@ The product-manager agent will:
 
 ### User Approval Checkpoint
 
-After the PRD is created, you will be asked to review and approve it before proceeding to Phase 2.
+After the PRD is created, you will review and approve it before proceeding to Phase 2.
 
 ### Phase 2: Generate Execution Plan
 
@@ -62,7 +61,7 @@ Once approved, the orchestrator agent will:
 1. **Initiating Phase 1**
    - The product-manager agent launches automatically
    - Agent reads all files in `docs/`
-   - Agent creates comprehensive `docs/prd.md`
+   - Agent creates `docs/prd.md`
 
 2. **Approval Checkpoint**
    - You review the generated `prd.md`
