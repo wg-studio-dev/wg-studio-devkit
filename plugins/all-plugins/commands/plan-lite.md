@@ -1,16 +1,16 @@
 ---
-name: plan
-description: Generate product requirements and execution plan with agent approval
+name: plan-lite
+description: Lightweight planning optimized for free-tier users - fast and cost-effective PRD and execution plan
 argument-hint: "[optional: project context or additional requirements]"
 ---
 
-# /plan - Generate PRD and Execution Plan
+# /plan-lite - Fast PRD and Execution Plan
 
-Orchestrates a comprehensive two-phase workflow to generate a Product Requirements Document (prd.md) and then a detailed execution plan (todo.md) for your project.
+Lightweight two-phase workflow optimized for speed and cost using Haiku without extended thinking.
 
-**Phase 1:** A product-manager agent analyzes all documentation in `docs/` and creates a comprehensive product requirements document.
+**Phase 1:** A product-manager agent analyzes documentation in `docs/` and creates a focused product requirements document.
 
-**Phase 2:** After your approval, an orchestrator agent uses everything in `docs/` (including the new PRD) to create a detailed, phased execution plan with task assignments and checkboxes.
+**Phase 2:** After your approval, an orchestrator agent uses everything in `docs/` (including the new PRD) to create a structured execution plan with task assignments.
 
 ## Workflow
 
@@ -19,7 +19,7 @@ Orchestrates a comprehensive two-phase workflow to generate a Product Requiremen
 The product-manager agent will:
 - Read all existing documentation in the `docs/` folder
 - Analyze product vision, requirements, and user flows
-- Create a comprehensive `docs/prd.md` with:
+- Create a focused `docs/prd.md` with:
   - Product Vision & Goals
   - Core Requirements & Features
   - User Flows & Personas
@@ -35,7 +35,6 @@ After the PRD is created, you will be asked to review and approve it before proc
 
 Once approved, the orchestrator agent will:
 - Read all documentation in `docs/` (including the new prd.md)
-- Determine optimal project structure and sequencing
 - Create `todo.md` with the following structure:
 
 #### todo.md Structure
@@ -61,28 +60,19 @@ Once approved, the orchestrator agent will:
 ## Steps
 
 1. **Initiating Phase 1**
-   - The product-manager agent launches automatically
+   - The product-manager agent launches automatically with model: "haiku"
    - Agent reads all files in `docs/`
-   - Agent creates comprehensive `docs/prd.md`
+   - Agent creates focused `docs/prd.md`
 
 2. **Approval Checkpoint**
    - You review the generated `prd.md`
    - You provide approval (or request changes)
 
 3. **Initiating Phase 2**
-   - The orchestrator agent launches automatically
+   - The orchestrator agent launches automatically with model: "haiku"
    - Agent reads `docs/` including the new `prd.md`
    - Agent creates `todo.md` with structured execution plan
 
 4. **Ready for Execution**
    - `todo.md` is ready for agent teams to execute
    - Each task can be checked off and summarized as work progresses
-
-## Success Criteria
-
-- [ ] Product requirements document (`docs/prd.md`) is created with clear vision and requirements
-- [ ] PRD is reviewed and approved by user
-- [ ] Execution plan (`todo.md`) is created with all phases, tasks, and assignments
-- [ ] todo.md includes clear checkboxes and completion summary spaces
-- [ ] All tasks have proper dependency indicators for parallel/sequential execution
-- [ ] Instructions at top of todo.md are clear and actionable for all agents

@@ -89,6 +89,18 @@
       },
       "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
       "tags": ["gemini", "images", "generation"]
+    },
+    {
+      "name": "designer",
+      "source": "./plugins/designer",
+      "description": "Principal UX/UI designer for wireframes and user flows",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+      "tags": ["ux", "ui", "wireframes", "design"]
     }
   ]
 }

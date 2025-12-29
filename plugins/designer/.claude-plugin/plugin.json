@@ -1,0 +1,11 @@
+{
+  "name": "designer",
+  "version": "1.0.0",
+  "description": "Principal UX/UI designer agent for wireframes, user flows, and visual hierarchy",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio"
+  },
+  "license": "MIT",
+  "keywords": ["ux", "ui", "wireframes", "design", "user-flows"]
+}

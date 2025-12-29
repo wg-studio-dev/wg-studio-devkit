@@ -1,16 +1,16 @@
 ---
-name: plan
-description: Generate product requirements and execution plan with agent approval
+name: plan-heavy
+description: Deep planning with extended thinking - comprehensive PRD and execution plan using Opus
 argument-hint: "[optional: project context or additional requirements]"
 ---
 
-# /plan - Generate PRD and Execution Plan
+# /plan-heavy - Comprehensive PRD and Execution Plan
 
-Orchestrates a comprehensive two-phase workflow to generate a Product Requirements Document (prd.md) and then a detailed execution plan (todo.md) for your project.
+Advanced two-phase workflow using Opus with extended thinking for maximum depth and insight.
 
-**Phase 1:** A product-manager agent analyzes all documentation in `docs/` and creates a comprehensive product requirements document.
+**Phase 1:** A product-manager agent analyzes all documentation in `docs/` and creates a comprehensive product requirements document with deep reasoning.
 
-**Phase 2:** After your approval, an orchestrator agent uses everything in `docs/` (including the new PRD) to create a detailed, phased execution plan with task assignments and checkboxes.
+**Phase 2:** After your approval, an orchestrator agent uses everything in `docs/` (including the new PRD) to create a detailed, carefully sequenced execution plan.
 
 ## Workflow
 
@@ -18,7 +18,7 @@ Orchestrates a comprehensive two-phase workflow to generate a Product Requiremen
 
 The product-manager agent will:
 - Read all existing documentation in the `docs/` folder
-- Analyze product vision, requirements, and user flows
+- Use extended thinking to deeply analyze product vision, requirements, and user flows
 - Create a comprehensive `docs/prd.md` with:
   - Product Vision & Goals
   - Core Requirements & Features
@@ -35,7 +35,7 @@ After the PRD is created, you will be asked to review and approve it before proc
 
 Once approved, the orchestrator agent will:
 - Read all documentation in `docs/` (including the new prd.md)
-- Determine optimal project structure and sequencing
+- Use extended thinking to deeply reason about optimal project structure and sequencing
 - Create `todo.md` with the following structure:
 
 #### todo.md Structure
@@ -61,18 +61,18 @@ Once approved, the orchestrator agent will:
 ## Steps
 
 1. **Initiating Phase 1**
-   - The product-manager agent launches automatically
+   - The product-manager agent launches automatically with model: "opus"
    - Agent reads all files in `docs/`
-   - Agent creates comprehensive `docs/prd.md`
+   - Agent creates comprehensive `docs/prd.md` with extended thinking
 
 2. **Approval Checkpoint**
    - You review the generated `prd.md`
    - You provide approval (or request changes)
 
 3. **Initiating Phase 2**
-   - The orchestrator agent launches automatically
+   - The orchestrator agent launches automatically with model: "opus"
    - Agent reads `docs/` including the new `prd.md`
-   - Agent creates `todo.md` with structured execution plan
+   - Agent creates `todo.md` with carefully structured execution plan
 
 4. **Ready for Execution**
    - `todo.md` is ready for agent teams to execute
@@ -80,7 +80,7 @@ Once approved, the orchestrator agent will:
 
 ## Success Criteria
 
-- [ ] Product requirements document (`docs/prd.md`) is created with clear vision and requirements
+- [ ] Product requirements document (`docs/prd.md`) is created with comprehensive vision and requirements
 - [ ] PRD is reviewed and approved by user
 - [ ] Execution plan (`todo.md`) is created with all phases, tasks, and assignments
 - [ ] todo.md includes clear checkboxes and completion summary spaces
