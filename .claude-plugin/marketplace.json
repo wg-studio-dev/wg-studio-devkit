@@ -101,6 +101,18 @@
       },
       "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
       "tags": ["ux", "ui", "wireframes", "design"]
+    },
+    {
+      "name": "pmm-plugins",
+      "source": "./plugins/pmm-plugins",
+      "description": "Product Marketing Manager toolkit - personas, messaging, and content strategy",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+      "tags": ["pmm", "marketing", "personas", "messaging"]
     }
   ]
 }
