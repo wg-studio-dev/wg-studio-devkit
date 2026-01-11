@@ -113,6 +113,18 @@
       },
       "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
       "tags": ["pmm", "marketing", "personas", "messaging"]
+    },
+    {
+      "name": "ralph-heavy",
+      "source": "./plugins/ralph-heavy",
+      "description": "Ralph, with learning loops",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+      "tags": ["ralph", "learning", "automation", "persistence"]
     }
   ]
 }
