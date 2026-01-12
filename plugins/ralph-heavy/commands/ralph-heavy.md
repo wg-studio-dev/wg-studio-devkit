@@ -1,17 +1,30 @@
 ---
 name: ralph-heavy
-description: "Wolf Wiggum - disciplined Ralph loop with learnings, progress tracking, and feature-by-feature execution"
+description: "Wolf Wiggum - disciplined Ralph loop with learnings, rules, progress tracking, and feature-by-feature execution"
 argument-hint: "[TASK_DESCRIPTION] [--max-iterations N]"
 ---
 
 # Ralph Heavy (Wolf Wiggum)
 
-This command combines Ralph Wiggum's persistence with the agent memory disciplined scaffolding:
-- **learnings.md**: Cumulative knowledge to prevent repeating mistakes
+This command combines Ralph Wiggum's persistence with disciplined agent memory scaffolding:
+- **learnings.md**: Discoveries and surprises (session-specific)
+- **rules/**: Established knowledge (reusable across sessions)
 - **progress.md**: Session history and state tracking
 - **features.json**: Feature-by-feature focus (one at a time)
 - **init.sh**: Consistent environment setup
 - **Git commits**: Rollback points after each feature
+
+## Learnings vs Rules: The Critical Distinction
+
+| Add to learnings.md | Add to rules/*.md |
+|---------------------|-------------------|
+| Unexpected errors and their fixes | Documented API behaviors |
+| Corrections from user feedback | Established code patterns |
+| "I wish I knew this earlier" moments | Data source specifications |
+| Tool quirks and workarounds | Command references |
+| Session-specific discoveries | Reusable architecture rules |
+
+**Rule of thumb**: If it's a **discovery** (something that surprised you), add it to `learnings.md`. If it's **established knowledge** (how something is designed to work), add it to the appropriate rule file.
 
 ## Phase 1: Setup Agent Memory Scaffolding
 
@@ -23,6 +36,11 @@ if [[ -d .agent-memory ]]; then
   echo ""
   echo "Existing agent memory scaffolding found:"
   ls -la .agent-memory/
+  echo ""
+  if [[ -d .agent-memory/rules ]]; then
+    echo "Rule files:"
+    ls -la .agent-memory/rules/
+  fi
 else
   echo "AGENT_MEMORY_EXISTS=false"
 fi
@@ -32,17 +50,48 @@ fi
 
 ```bash
 mkdir -p .agent-memory
+mkdir -p .agent-memory/rules
 
-# Create learnings file (cumulative knowledge)
+# Create learnings file (discoveries and surprises)
 cat > .agent-memory/learnings.md << 'EOF'
 # Learnings
 
 <!--
-Record friction points, failed approaches, and solutions here.
+Record DISCOVERIES here - things that surprised you.
 Format: brief, actionable insights (not session logs).
-Example: "Auth header requires 'Bearer ' prefix with trailing space"
+
+Examples:
+- "Auth header requires 'Bearer ' prefix with trailing space"
+- "JSON.parse throws on empty string - use try/catch"
+- "The /api/v2 endpoint returns dates as Unix timestamps, not ISO"
+
+DO NOT add established knowledge here - that goes in rules/*.md
 -->
 
+EOF
+
+# Create rules index file
+cat > .agent-memory/rules/README.md << 'EOF'
+# Rules Directory
+
+Established knowledge that applies across sessions. Create domain-specific files as needed.
+
+## When to Create a New Rule File
+
+Create a new `<domain>.md` file when you have 3+ related pieces of established knowledge about:
+- An API or external service
+- A codebase pattern or convention
+- A data source or integration
+- Architecture decisions
+
+## Example Rule Files
+
+| File | Contents |
+|------|----------|
+| `api.md` | API endpoints, auth patterns, rate limits |
+| `database.md` | Schema conventions, query patterns, migrations |
+| `testing.md` | Test setup, fixtures, mocking patterns |
+| `deployment.md` | Deploy commands, env vars, infrastructure |
 EOF
 
 # Create progress file (session tracking)
@@ -139,10 +188,11 @@ Once scaffolding is ready, construct and execute the Ralph Heavy loop:
 Run .agent-memory/init.sh at start of each iteration.
 
 ## Progress Protocol
-1. Read .agent-memory/learnings.md for known gotchas (FIRST)
-2. Read .agent-memory/progress.md for session history
-3. Read .agent-memory/features.json for current state
-4. Check git log --oneline -5
+1. Read .agent-memory/learnings.md for discoveries (FIRST)
+2. Read .agent-memory/rules/*.md for established knowledge
+3. Read .agent-memory/progress.md for session history
+4. Read .agent-memory/features.json for current state
+5. Check git log --oneline -5
 
 ## Work Rules
 - Work on ONE feature at a time (lowest priority incomplete)
@@ -151,21 +201,30 @@ Run .agent-memory/init.sh at start of each iteration.
   1. Update features.json (passes: true)
   2. git add -A && git commit -m 'Agent: Complete [feature-id]'
   3. Append session summary to progress.md
-  4. Add any discoveries to learnings.md
+  4. Capture knowledge (see Knowledge Protocol below)
 
-## Learning Protocol
-When you discover something unexpected:
-- Add it to learnings.md IMMEDIATELY
-- Format: one line, present tense, actionable
+## Knowledge Protocol
+Classify what you learned and add it to the right place:
+
+| Type | Where | Example |
+|------|-------|---------|
+| Discovery (surprised you) | learnings.md | 'API returns 429 after 100 req/min' |
+| Established knowledge | rules/<domain>.md | 'API rate limit is 100 req/min per docs' |
+
+**learnings.md**: Add immediately when something surprises you. One line, present tense.
+**rules/*.md**: Add when you confirm how something is designed to work. Create domain files as needed (api.md, database.md, etc.).
+
+**Promotion pattern**: When a learning is confirmed as established behavior, move it from learnings.md to the appropriate rules file.
 
 ## Failure Mitigation
 | If you notice... | Do this... |
 |------------------|------------|
 | Multiple features changing | STOP. Revert. Pick ONE. |
 | Tests failing | Fix before proceeding |
-| Repeating a mistake | Check learnings.md |
+| Repeating a mistake | Check learnings.md and rules/*.md |
 | Stuck 3+ iterations | Document in learnings.md, move on |
 | Environment broken | Run .agent-memory/init.sh, git checkout . |
+| Same issue across sessions | Promote from learnings.md to rules/*.md |
 
 ## Completion
 Output <promise>ALL FEATURES PASSING</promise> when every feature has passes: true.
@@ -188,7 +247,14 @@ cat .agent-memory/features.json | jq '.features[] | select(.passes == false) | .
 ```
 
 **Key files:**
-- `.agent-memory/learnings.md` - Cumulative knowledge (read first!)
+- `.agent-memory/learnings.md` - Discoveries and surprises (read first!)
+- `.agent-memory/rules/*.md` - Established knowledge (domain-specific)
 - `.agent-memory/progress.md` - Session history
 - `.agent-memory/features.json` - Feature list and status
 - `.agent-memory/init.sh` - Environment setup script
+
+**Learnings vs Rules Quick Check:**
+```
+Did it surprise you? → learnings.md
+Is it how things are designed? → rules/<domain>.md
+```
