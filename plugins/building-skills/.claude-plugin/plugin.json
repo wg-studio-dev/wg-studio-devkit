@@ -1,0 +1,11 @@
+{
+  "name": "building-skills",
+  "version": "1.0.0",
+  "description": "Create and refine Claude Code skills following best practices. Generates SKILL.md files with proper structure, frontmatter, and workflow patterns.",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio"
+  },
+  "license": "MIT",
+  "keywords": ["skills", "authoring", "templates", "best-practices"]
+}
