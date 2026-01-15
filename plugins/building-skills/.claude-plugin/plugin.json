@@ -1,7 +1,7 @@
 {
   "name": "building-skills",
   "version": "1.0.0",
-  "description": "Create and refine Claude Code skills following best practices. Generates SKILL.md files with proper structure, frontmatter, and workflow patterns.",
+  "description": "Create and refine Claude Code skills following best practices. Based on work by Jeffrey Emanuel (Dicklesworthstone).",
   "author": {
     "name": "Wilson Gramer",
     "email": "wilson@0wg.studio"

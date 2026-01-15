@@ -3,7 +3,8 @@ name: building-skills
 description: >-
   Create and refine Claude Code skills following best practices. Generates SKILL.md files
   with proper structure, frontmatter, and workflow patterns. Use when creating new skills,
-  improving existing skills, or asking how to structure a skill.
+  improving existing skills, or asking how to structure a skill. Based on work by Jeffrey
+  Emanuel (Dicklesworthstone).
 ---
 
 # Building Skills

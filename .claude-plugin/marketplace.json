@@ -129,7 +129,7 @@
     {
       "name": "building-skills",
       "source": "./plugins/building-skills",
-      "description": "Create and refine Claude Code skills following best practices",
+      "description": "Create and refine Claude Code skills following best practices. Based on work by Jeffrey Emanuel (Dicklesworthstone).",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
