@@ -7,52 +7,16 @@
   },
   "plugins": [
     {
-      "name": "all-plugins",
-      "source": "./plugins/all-plugins",
-      "description": "Complete wg-studio DevKit",
+      "name": "cc-research",
+      "source": "./plugins/cc-research",
+      "description": "Scrape r/ClaudeCode for tips and techniques",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
         "email": "wilson@0wg.studio"
       },
       "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
-      "tags": ["bundle", "complete", "toolkit"]
-    },
-    {
-      "name": "dev-team",
-      "source": "./plugins/dev-team",
-      "description": "Software developer team in a box",
-      "version": "1.0.0",
-      "author": {
-        "name": "Wilson Gramer",
-        "email": "wilson@0wg.studio"
-      },
-      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
-      "tags": ["agents", "team", "coordination"]
-    },
-    {
-      "name": "builder-commands",
-      "source": "./plugins/builder-commands",
-      "description": "Specs, plans, and builds your project",
-      "version": "1.0.0",
-      "author": {
-        "name": "Wilson Gramer",
-        "email": "wilson@0wg.studio"
-      },
-      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
-      "tags": ["commands", "workflow", "automation"]
-    },
-    {
-      "name": "gemini",
-      "source": "./plugins/gemini",
-      "description": "Use Gemini 3 inside Claude Code!",
-      "version": "1.0.0",
-      "author": {
-        "name": "Wilson Gramer",
-        "email": "wilson@0wg.studio"
-      },
-      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
-      "tags": ["gemini", "ai", "google"]
+      "tags": ["research", "reddit", "claude-code"]
     },
     {
       "name": "frontend-imitate",
@@ -67,16 +31,16 @@
       "tags": ["frontend", "design", "ui"]
     },
     {
-      "name": "cc-research",
-      "source": "./plugins/cc-research",
-      "description": "Scrape r/ClaudeCode for tips and techniques",
+      "name": "gemini",
+      "source": "./plugins/gemini",
+      "description": "Use Gemini 3 inside Claude Code!",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
         "email": "wilson@0wg.studio"
       },
       "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
-      "tags": ["research", "reddit", "claude-code"]
+      "tags": ["gemini", "ai", "google"]
     },
     {
       "name": "nano-banana",
@@ -91,30 +55,6 @@
       "tags": ["gemini", "images", "generation"]
     },
     {
-      "name": "designer",
-      "source": "./plugins/designer",
-      "description": "Principal UX/UI designer for wireframes and user flows",
-      "version": "1.0.0",
-      "author": {
-        "name": "Wilson Gramer",
-        "email": "wilson@0wg.studio"
-      },
-      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
-      "tags": ["ux", "ui", "wireframes", "design"]
-    },
-    {
-      "name": "pmm-plugins",
-      "source": "./plugins/pmm-plugins",
-      "description": "Product Marketing Manager toolkit - personas, messaging, and content strategy",
-      "version": "1.0.0",
-      "author": {
-        "name": "Wilson Gramer",
-        "email": "wilson@0wg.studio"
-      },
-      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
-      "tags": ["pmm", "marketing", "personas", "messaging"]
-    },
-    {
       "name": "ralph-heavy",
       "source": "./plugins/ralph-heavy",
       "description": "Ralph, with learning loops",
@@ -127,16 +67,16 @@
       "tags": ["ralph", "learning", "automation", "persistence"]
     },
     {
-      "name": "building-skills",
-      "source": "./plugins/building-skills",
-      "description": "Create and refine Claude Code skills following best practices. Based on work by Jeffrey Emanuel (Dicklesworthstone).",
+      "name": "plan-heavy",
+      "source": "./plugins/plan-heavy",
+      "description": "Deep planning with Opus extended thinking - comprehensive PRD and execution plan",
       "version": "1.0.0",
       "author": {
         "name": "Wilson Gramer",
         "email": "wilson@0wg.studio"
       },
       "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
-      "tags": ["skills", "authoring", "templates", "best-practices"]
+      "tags": ["planning", "opus", "prd", "execution-plan"]
     }
   ]
 }

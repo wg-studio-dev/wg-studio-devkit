@@ -52,15 +52,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MIT License
 - GitHub repository: wilsongramer/0wg_studio_devkit
 
-## [Unreleased]
+## [2.0.0] - 2026-02-06
 
-### Planned
-- Additional workflow commands for common development tasks
-- More specialized agents for testing, DevOps, and documentation
-- Enhanced Gemini integration with streaming support
-- Additional frontend skills for accessibility and performance
-- Example projects demonstrating plugin usage
-- Video tutorials and documentation site
+### Changed
+- **BREAKING**: Reduced marketplace from 11 plugins to 6 focused plugins
+- Restructured as a curated toolkit instead of a monolithic bundle
+
+### Added
+- **plan-heavy** plugin: Deep planning with Opus extended thinking (self-contained with product-manager and orchestrator agents)
+- Populated **cc-research** plugin with full skill implementation (SKILL.md, README.md, fetch_cc_reddit.py)
+- Populated **nano-banana** plugin with full skill implementation (TypeScript source, build artifacts, config)
+
+### Removed
+- **all-plugins** bundle (install plugins individually now)
+- **dev-team** plugin (7 agents)
+- **builder-commands** plugin (6 commands)
+- **designer** plugin
+- **pmm-plugins** plugin
+- **building-skills** plugin
+- Root agents: agents.md, architect.md, backend-principal.md, designer.md, frontend-principal.md, product-interviewer.md, program-manager.md, project-manager.md
+- Root commands: cc-research.md, execute.md, feature-driven-development.md, new-project.md, plan-lite.md, plan.md, product-interview.md, release-notes.md, skip-permissions.md, spec-heavy.md, spec-lite.md, spec-persona.md, spec.md
+- Root skills: auth-builder, frontend-design
+
+## [Unreleased]
 
 ---
 

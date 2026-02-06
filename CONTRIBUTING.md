@@ -127,9 +127,7 @@ This project uses the lazy-context pattern. When contributing:
 
 2. Update `.claude-plugin/plugin.json` to include the new agent
 
-3. Consider agent coordination in `agents/agents.md`
-
-4. Test agent behavior in various scenarios
+3. Test agent behavior in various scenarios
 
 ### Adding New Skills
 

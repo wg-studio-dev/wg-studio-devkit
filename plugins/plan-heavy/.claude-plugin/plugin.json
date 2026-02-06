@@ -1,0 +1,12 @@
+{
+  "name": "plan-heavy",
+  "version": "1.0.0",
+  "description": "Deep planning with Opus extended thinking - comprehensive PRD and execution plan",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio"
+  },
+  "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+  "license": "MIT",
+  "keywords": ["planning", "opus", "prd", "execution-plan", "extended-thinking"]
+}
