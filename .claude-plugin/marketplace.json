@@ -77,6 +77,18 @@
       },
       "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
       "tags": ["planning", "opus", "prd", "execution-plan"]
+    },
+    {
+      "name": "new-project",
+      "source": "./plugins/new-project",
+      "description": "Initialize a new project with docs structure and comprehensive resource documentation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+      "tags": ["project", "scaffolding", "setup", "documentation"]
     }
   ]
 }

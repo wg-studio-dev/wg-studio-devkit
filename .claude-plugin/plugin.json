@@ -27,6 +27,10 @@
     {
       "name": "ralph-heavy",
       "description": "Wolf Wiggum - disciplined Ralph loop with learnings, progress tracking, and feature-by-feature execution"
+    },
+    {
+      "name": "new-project",
+      "description": "Initialize a new project with docs structure and comprehensive resource documentation"
     }
   ],
   "agents": [

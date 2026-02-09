@@ -9,7 +9,7 @@ This is the **wg-studio DevKit** - a Claude Code plugin marketplace published at
 
 ### Published Plugins
 
-This repository contains **6 modular plugins**:
+This repository contains **7 modular plugins**:
 
 1. **cc-research** - Scrape r/ClaudeCode for tips and techniques (1 skill)
 2. **frontend-imitate** - Imitating a website is the sincerest form of flattery (1 skill)
@@ -17,6 +17,7 @@ This repository contains **6 modular plugins**:
 4. **nano-banana** - Use Gemini Nano Banana to generate images (1 skill)
 5. **ralph-heavy** - Ralph, with learning loops (1 command)
 6. **plan-heavy** - Deep planning with Opus extended thinking (1 command, 2 agents)
+7. **new-project** - Initialize a new project with docs structure and resource documentation (1 command)
 
 Users install with: `/plugin marketplace add wg-studio-dev/wg-studio-devkit`
 
@@ -53,16 +54,17 @@ You can generate code from multiple AI providers:
 wg-studio-devkit/
 ├── .claude-plugin/
 │   ├── plugin.json           # Root plugin metadata
-│   └── marketplace.json      # Marketplace with 6 plugins
+│   └── marketplace.json      # Marketplace with 7 plugins
 ├── plugins/
 │   ├── cc-research/          # Reddit research skill
 │   ├── frontend-imitate/     # Website imitation skill
 │   ├── gemini/               # Gemini integration skill
 │   ├── nano-banana/          # Image generation skill
 │   ├── ralph-heavy/          # Ralph with learning loops
-│   └── plan-heavy/           # Deep planning (command + agents)
+│   ├── plan-heavy/           # Deep planning (command + agents)
+│   └── new-project/          # Project scaffolding (command)
 ├── agents/                   # Root-level agents (product-manager, orchestrator)
-├── commands/                 # Root-level commands (plan-heavy, ralph-heavy)
+├── commands/                 # Root-level commands (plan-heavy, ralph-heavy, new-project)
 ├── skills/                   # Root-level skills (cc-research, frontend-imitate, gemini, nano-banana)
 └── docs/                     # Documentation
 ```
