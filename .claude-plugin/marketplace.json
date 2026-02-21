@@ -89,6 +89,42 @@
       },
       "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
       "tags": ["project", "scaffolding", "setup", "documentation"]
+    },
+    {
+      "name": "spec-heavy",
+      "source": "./plugins/spec-heavy",
+      "description": "Comprehensive specification analysis with Opus extended thinking — backend, frontend, wireframes, and architecture",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+      "tags": ["planning", "opus", "architecture", "spec", "wireframes"]
+    },
+    {
+      "name": "cost-estimate",
+      "source": "./plugins/cost-estimate",
+      "description": "Estimate development cost of a codebase based on lines of code and complexity",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+      "tags": ["cost", "estimation", "codebase", "analysis"]
+    },
+    {
+      "name": "pace",
+      "source": "./plugins/pace",
+      "description": "Calculate percentage progress through weekly Claude Code usage period",
+      "version": "1.0.0",
+      "author": {
+        "name": "Wilson Gramer",
+        "email": "wilson@0wg.studio"
+      },
+      "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+      "tags": ["claude-code", "usage", "pacing", "productivity"]
     }
   ]
 }

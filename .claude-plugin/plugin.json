@@ -31,6 +31,18 @@
     {
       "name": "new-project",
       "description": "Initialize a new project with docs structure and comprehensive resource documentation"
+    },
+    {
+      "name": "spec-heavy",
+      "description": "Comprehensive specification analysis with Opus extended thinking — backend, frontend, wireframes, and architecture"
+    },
+    {
+      "name": "cost-estimate",
+      "description": "Estimate development cost of a codebase based on lines of code and complexity"
+    },
+    {
+      "name": "pace",
+      "description": "Calculate percentage progress through weekly Claude Code usage period"
     }
   ],
   "agents": [

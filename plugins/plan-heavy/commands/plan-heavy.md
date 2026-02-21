@@ -2,6 +2,7 @@
 name: plan-heavy
 description: Enterprise planning with Opus and extended thinking for maximum depth
 argument-hint: "[optional: project context or additional requirements]"
+model: claude-opus-4-6
 ---
 
 # /plan-heavy - Deep Planning with Opus Extended Thinking
