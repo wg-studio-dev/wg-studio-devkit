@@ -1,0 +1,11 @@
+{
+  "name": "pace",
+  "version": "1.0.0",
+  "description": "Calculate percentage progress through weekly Claude Code usage period",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio"
+  },
+  "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+  "keywords": ["claude-code", "usage", "pacing", "productivity"]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "cost-estimate",
+  "version": "1.0.0",
+  "description": "Estimate development cost of a codebase based on lines of code and complexity",
+  "author": {
+    "name": "Wilson Gramer",
+    "email": "wilson@0wg.studio"
+  },
+  "homepage": "https://github.com/wg-studio-dev/wg-studio-devkit",
+  "keywords": ["cost", "estimation", "codebase", "analysis"]
+}
